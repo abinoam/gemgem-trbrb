@@ -2,8 +2,8 @@
 
 = simple_form_for(@form, url: sessions_sign_in_path, as: :session) do |f|
   .row
-    = f.input :email, placeholder: "Email"
+    = f.input :email
   .row
-    = f.input :password, placeholder: "Password"
+    = f.input :password
 
   = f.button :submit, "Sign in!", class: :expand

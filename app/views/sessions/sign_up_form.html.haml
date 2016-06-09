@@ -2,10 +2,10 @@
 
 = simple_form_for(@form, url: sessions_sign_up_path) do |f|
   .row
-    = f.input :email, placeholder: "Email"
+    = f.input :email
   .row
-    = f.input :password, placeholder: "Password"
+    = f.input :password
   .row
-    = f.input :confirm_password, placeholder: "Password, again"
+    = f.input :confirm_password
   .row
     = f.button :submit, "Sign up!", class: :expand

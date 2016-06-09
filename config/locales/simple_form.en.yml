@@ -18,6 +18,12 @@ en:
         body: Your comment
       user:
         email: Your email
+        password: Password
+        confirm_password: Password, again!
+      session:
+        email: Your email
+        password: Your Password
+
       # Used for simple_fields_for :users
       users:
         email: Email
