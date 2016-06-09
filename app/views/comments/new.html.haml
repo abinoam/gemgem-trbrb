@@ -5,11 +5,11 @@
 = simple_form_for [@thing, @form] do |f| # POST /things/1/comments/
   %h3 What do you think?
 
-  = f.input :body, placeholder: "Your comment"
+  = f.input :body
   = f.collection_radio_buttons :weight, *@form.weights
 
   = f.fields_for :user do |u|
-    = u.input :email, placeholder: "Your Email"
+    = u.input :email
 
   = f.button :submit, class: :expand
 

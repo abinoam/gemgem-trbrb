@@ -14,6 +14,10 @@ en:
       thing:
         name: Name
         description: Description
+      comment:
+        body: Your comment
+        email: Your email
+
     # Examples
     # labels:
     #   defaults:
