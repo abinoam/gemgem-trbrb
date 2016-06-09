@@ -104,4 +104,11 @@ SimpleForm.setup do |config|
 
   # The default wrapper to be used by the FormBuilder.
   config.default_wrapper = :vertical_form
+
+  # Changing this to :inline to the good of Foundation
+  # Define the way to render check boxes / radio buttons with labels.
+  # Defaults to :nested for bootstrap config.
+  #   inline: input + label
+  #   nested: label > input
+  config.boolean_style = :inline
 end
