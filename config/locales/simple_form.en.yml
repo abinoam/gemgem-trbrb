@@ -16,6 +16,7 @@ en:
         description: Description
       comment:
         body: Your comment
+      user:
         email: Your email
 
     # Examples
