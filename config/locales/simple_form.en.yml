@@ -18,6 +18,9 @@ en:
         body: Your comment
       user:
         email: Your email
+      # Used for simple_fields_for :users
+      users:
+        email: Email
 
     # Examples
     # labels:
