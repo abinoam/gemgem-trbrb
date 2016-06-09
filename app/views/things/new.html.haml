@@ -10,7 +10,7 @@
 
     - if tyrant.signed_in?
       .row
-        = f.input :is_author, as: :boolean
+        = f.input :is_author, wrapper: :vertical_form_checkbox
 
       %hr
 
@@ -19,7 +19,7 @@
         = a.input :email, readonly: a.object.readonly?
 
         -if a.object.removeable?
-          = a.input :remove, as: :boolean, inline_label: true, input_html: { checked: false }
+          = a.input :remove, as: :boolean, wrapper: :vertical_form_checkbox
 
   = f.button :submit, class: :expand
 
