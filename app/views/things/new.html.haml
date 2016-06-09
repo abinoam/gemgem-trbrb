@@ -1,9 +1,8 @@
 %h3 What do you want to talk about?
 
 = simple_form_for @form do |f|
-  - # TODO: can anyone please make things work with simple_form so we don't have to specify label: false, etc. everywhere?
-  = f.input :name, placeholder: "Name", label: false, readonly: @form.readonly?(:name)
-  = f.input :description, placeholder: "Description", label: false
+  = f.input :name, readonly: @form.readonly?(:name)
+  = f.input :description
   = f.input :file, as: :file
 
   %fieldset
@@ -11,7 +10,7 @@
 
     - if tyrant.signed_in?
       .row
-        = f.input :is_author, as: :boolean, label: "I'm the author!"
+        = f.input :is_author, wrapper: :vertical_form_checkbox
 
       %hr
 
@@ -20,7 +19,7 @@
         = a.input :email, readonly: a.object.readonly?
 
         -if a.object.removeable?
-          = a.input :remove, as: :boolean, inline_label: true, input_html: { checked: false }
+          = a.input :remove, as: :boolean, wrapper: :vertical_form_checkbox
 
   = f.button :submit, class: :expand
 
