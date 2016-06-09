@@ -10,7 +10,16 @@ en:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Please review the problems below:"
-    # Labels and hints examples
+    placeholders:
+      thing:
+        name: Name
+        description: Description
+      comment:
+        body: Your comment
+      user:
+        email: Your email
+
+    # Examples
     # labels:
     #   defaults:
     #     password: 'Password'
@@ -23,4 +32,9 @@ en:
     #   defaults:
     #     username: 'User name to sign in.'
     #     password: 'No special characters, please.'
-
+    # include_blanks:
+    #   defaults:
+    #     age: 'Rather not say'
+    # prompts:
+    #   defaults:
+    #     age: 'Select your age'
