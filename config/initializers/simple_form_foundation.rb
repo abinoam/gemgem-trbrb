@@ -14,7 +14,7 @@ SimpleForm.setup do |config|
     b.optional :pattern
     b.optional :min_max
     b.optional :readonly
-    b.use :label_input
+    b.use :input
     b.use :error, wrap_with: { tag: :small, class: :error }
 
     # b.use :hint,  wrap_with: { tag: :span, class: :hint }
