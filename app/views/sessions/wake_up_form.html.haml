@@ -2,9 +2,9 @@
 
 = simple_form_for(@form, url: session_wake_up_path(id: params[:id]), method: :post) do |f|
   .row
-    = f.input :password, placeholder: "Password", label: false
+    = f.input :password
   .row
-    = f.input :confirm_password, placeholder: "Password, again", label: false
+    = f.input :confirm_password
   .row
     = f.button :submit, "Engage!", class: :expand
 
